@@ -1,0 +1,20 @@
+.type-select {
+  font-size: 1.1rem;
+  padding: 10px;
+  border: 3px solid #ff0000; 
+  border-radius: 50px; 
+  background-color: white; 
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.type-filter {
+  font-weight: bold;
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan,
+    0 0 50px cyan, 0 0 60px cyan, 0 0 70px cyan;
+  font-size: 1.3rem;
+}
+.type-filter-container {
+  margin-bottom: 30px;
+}

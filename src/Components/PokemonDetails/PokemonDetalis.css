@@ -1,0 +1,143 @@
+.pokemon-details {
+  padding-top: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pokemon-details img {
+  width: 350px;
+  filter: drop-shadow(1px 1px 50px yellow);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+}
+
+.pokemon-details ul {
+  list-style-type: none;
+}
+
+.pokemon-details h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan,
+    0 0 50px cyan, 0 0 60px cyan, 0 0 70px cyan;
+}
+
+.border-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.border-img {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.border-img i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.border-img i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+
+.border-img i:nth-child(2) {
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+
+.border-img i:nth-child(3) {
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+}
+
+.border-green {
+  --clr: #00ff0a;
+}
+.border-red {
+  --clr: #ff0057;
+}
+.border-yellow {
+  --clr: #fffd44;
+}
+
+.border-img:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.pokemon-details p{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background-color: aqua;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.abilities,
+.moves,
+.types {
+  margin-top: 50px;
+}
+
+.description {
+  background-color: rgba(255, 190, 9, 0.5);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px;
+  margin-top: 5px;
+  backdrop-filter: blur(10px);
+}
+
+  .backButton {
+    margin: 30px;
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 2px solid #2ecc71;
+    position: relative;
+    box-shadow: 0 0 15px #2ecc71;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .backButton:hover {
+    box-shadow: 0 0 30px #2ecc71, 0 0 60px #2ecc71, 0 0 90px #2ecc71;
+    transform: scale(1.1);
+  }
+  
+  

@@ -1,0 +1,29 @@
+body.light {
+  background-image: url("../../assets/light.jpg");
+  color: black;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: background-image 0.5s ease, color 0.5s ease;
+}
+
+body.dark {
+  background-image: url("../../assets/dark.jpg");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: background-image 0.5s ease, color 0.5s ease;
+}
+
+body.dark .pokemonCard p {
+  color: red;
+}
+
+body.dark .pokemon-details p {
+  color: rgb(0, 45, 248);
+}
+
+body.dark .Header {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+}

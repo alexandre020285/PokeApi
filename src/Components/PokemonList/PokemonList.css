@@ -1,0 +1,127 @@
+.pokemonList {
+  padding-top: 190px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.pokemonList h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan,
+    0 0 50px cyan, 0 0 60px cyan, 0 0 70px cyan;
+}
+
+.buttonMorePokemons {  
+  font-weight: 700;
+  margin: 30px;
+  background-color: #ffcc00;  
+  color: #3b4cca;  
+  font-size: 1.2em;   
+  padding: 10px 20px;   
+  border: none;   
+  border-radius: 5px;   
+  cursor: pointer;   
+  position: relative;   
+  overflow: hidden;  
+  transition: transform 0.3s, box-shadow 0.3s; /  
+}  
+
+.buttonMorePokemons::before {  
+  content: '';  
+  position: absolute;  
+  top: 50%;  
+  left: 50%;  
+  width: 300%;  
+  height: 300%;   
+  background: rgba(211, 58, 58, 0.5);   
+  border-radius: 50%;   
+  transform: translate(-50%, -50%) scale(0);  
+  transition: transform 0.5s;   
+  z-index: 0;   
+}  
+
+.buttonMorePokemons:hover {  
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  
+}  
+
+.buttonMorePokemons:hover::before {  
+  transform: translate(-50%, -50%) scale(1);   
+}  
+
+.buttonMorePokemons span {  
+  position: relative;  
+  z-index: 1;  
+}
+
+.pokemonCard-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.pokemonCard {
+  border: 2px solid #4caf50; 
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #d1ffd1; 
+  width: 300px; 
+  height: 270px;
+}
+
+.pokemonCard:hover {
+  background-color: #f0fff0; 
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.pokemonCard button:hover {
+  background-color: #45a049;
+}
+
+.pokemonName {
+  background-color: rgba(0, 255, 255, 0.5);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pokemonCard img {
+  width: 150px;
+  height: auto;
+  filter: drop-shadow(1px 1px 20px yellow);
+  transition: transform 0.8s, filter 0.8s; 
+}
+
+.pokemonCard:hover img {
+  transform: rotateY(180deg);   
+  filter: drop-shadow(1px 1px 20px red);
+  transition: transform 0.8s, filter 0.8s;
+}
+
+.pokemonType {
+  background-color: rgba(40, 194, 104, 0.5);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px;
+  border-color: 1px solid #45a049;
+
+}
+.pokemonType-description {
+  background-color: rgba(255, 190, 9, 0.5);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .pokemonList {
+    padding-top: 240px;
+  }
+}
